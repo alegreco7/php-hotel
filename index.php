@@ -38,11 +38,23 @@ $hotels = [
     ],
 ];
 
+// Itera attraverso gli hotel
 foreach ($hotels as $hotel) {
+    // Stampa il nome dell'hotel
     echo "Nome: " . $hotel['name'] . "<br>";
+
+    // Stampa la descrizione dell'hotel
     echo "Descrizione: " . $hotel['description'] . "<br>";
+
+    // Stampa se c'è parcheggio o meno
     echo "Parcheggio disponibile: " . ($hotel['parking'] ? 'Sì' : 'No') . "<br>";
+
+    // Stampa il voto dell'hotel
     echo "Voto: " . $hotel['vote'] . "<br>";
+
+    // Stampa la distanza dall centro
     echo "Distanza dal centro: " . $hotel['distance_to_center'] . " km<br>";
-    echo "<hr>"; // Aggiunge una linea orizzontale per separare gli hotel
+
+    // Aggiunge una linea orizzontale per separare gli hotel
+    echo "<hr>";
 }
